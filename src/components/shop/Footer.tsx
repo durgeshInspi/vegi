@@ -41,9 +41,13 @@ export default function Footer({ categories, onSelectCategory }: FooterProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
             {/* Col 1 & 2: Brand & Description */}
             <div className="lg:col-span-2 space-y-4">
-              <Link href="/" className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#2E7D32] to-[#66BB6A] flex items-center justify-center text-white shadow-md">
-                  <Leaf className="w-5 h-5" />
+              <Link href="/" className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl overflow-hidden bg-white p-0.5 shadow-md flex items-center justify-center shrink-0">
+                  <img
+                    src="/logo.jpg"
+                    alt="VegiFresh Market Logo"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-2xl font-black text-white tracking-tight leading-none">

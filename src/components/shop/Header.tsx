@@ -112,16 +112,20 @@ export default function Header({ currentUser, onSearch, searchQuery = "" }: Head
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 gap-3 md:gap-6">
             {/* 1. Logo & Brand */}
-            <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#2E7D32] to-[#66BB6A] flex items-center justify-center text-white shadow-md shadow-[#2E7D32]/20 group-hover:scale-105 transition-transform">
-                <Leaf className="w-6 h-6" />
+            <Link href="/" className="flex items-center gap-3 shrink-0 group">
+              <div className="w-11 h-11 rounded-2xl overflow-hidden bg-white border border-emerald-100 shadow-md shadow-[#2E7D32]/15 flex items-center justify-center p-0.5 group-hover:scale-105 transition-transform shrink-0">
+                <img
+                  src="/logo.jpg"
+                  alt="VegiFresh Market Logo"
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-none group-hover:text-[#2E7D32] transition-colors">
                   VegiFresh<span className="text-[#2E7D32]">.</span>
                 </span>
-                <span className="text-[10px] sm:text-[11px] font-semibold text-emerald-700 uppercase tracking-widest leading-tight mt-0.5">
-                  Farm Market
+                <span className="text-[10px] sm:text-[11px] font-bold text-[#2E7D32] uppercase tracking-widest leading-tight mt-0.5">
+                  Organic Market
                 </span>
               </div>
             </Link>

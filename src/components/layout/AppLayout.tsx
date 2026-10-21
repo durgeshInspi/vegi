@@ -109,8 +109,12 @@ export default function AppLayout({ children }: AppLayoutProps) {
       <aside className="no-print hidden md:flex md:w-64 flex-col bg-slate-900 text-slate-200 border-r border-slate-800 shadow-xl">
         {/* Brand Header */}
         <div className="h-16 flex items-center gap-3 px-6 bg-slate-950 border-b border-slate-800/80">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white shadow-md shadow-emerald-900/40">
-            <Store className="w-5 h-5" />
+          <div className="w-9 h-9 rounded-xl overflow-hidden bg-white p-0.5 shadow-md flex items-center justify-center shrink-0">
+            <img
+              src="/logo.jpg"
+              alt="VegiFresh Logo"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
           <div>
             <div className="flex items-center gap-1.5">

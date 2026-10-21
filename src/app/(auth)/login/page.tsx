@@ -52,8 +52,12 @@ export default function LoginPage() {
       <div className="relative w-full max-w-md bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 p-8 sm:p-10">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-400 text-white shadow-lg shadow-emerald-600/30 mb-4">
-            <Store className="w-8 h-8" />
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white shadow-xl shadow-emerald-600/20 mb-4 p-1 overflow-hidden border border-emerald-100">
+            <img
+              src="/logo.jpg"
+              alt="VegiFresh Market Logo"
+              className="w-full h-full object-cover rounded-2xl"
+            />
           </div>
           <h1 className="text-2xl font-bold text-slate-900 tracking-tight">VegiFresh Market</h1>
           <p className="text-xs text-slate-500 mt-1 font-medium">Vegetable Shop Management & POS System</p>
